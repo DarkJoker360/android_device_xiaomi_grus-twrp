@@ -13,7 +13,7 @@
 /system_image  emmc   /dev/block/bootdevice/by-name/system
 /vendor_image  emmc   /dev/block/bootdevice/by-name/vendor
 
-/data          f2fs   /dev/block/bootdevice/by-name/userdata                  flags=fileencryption=ice:aes-256-cts;wrappedkey
+/data          f2fs   /dev/block/bootdevice/by-name/userdata                  flags=fileencryption=ice:aes-256-cts
 /firmware      vfat   /dev/block/bootdevice/by-name/modem                        flags=display="Firmware";mounttodecrypt
 /cust          ext4   /dev/block/bootdevice/by-name/cust                         flags=display="Cust"
 /misc          emmc   /dev/block/bootdevice/by-name/misc
@@ -28,5 +28,5 @@
 /persist_image emmc    /dev/block/bootdevice/by-name/persist                  flags=display="Persist";flashimg=1
 
 # Removable storage
-/usb_otg       vfat   /dev/block/sda1                    /dev/block/sda       flags=fsflags=utf8;display="USB-Storage";storage;wipeingui;removable
-/sdcard1       auto   /dev/block/mmcblk1p1                                    flags=display="MicroSD";storage;wipeingui;removable
+/usb_otg       vfat   /dev/block/sdg1                    /dev/block/sdg       flags=fsflags=utf8;display="USB-Storage";storage;wipeingui;removable
+/sdcard1       auto   /dev/block/mmcblk0p1                                    flags=display="MicroSD";storage;wipeingui;removable

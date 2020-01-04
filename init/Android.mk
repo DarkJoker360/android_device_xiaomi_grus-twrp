@@ -22,7 +22,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := \
     system/core/base/include \
     system/core/init
-LOCAL_SRC_FILES := init_ginkgo.cpp
-LOCAL_MODULE := libinit_ginkgo
+LOCAL_SRC_FILES := init_pyxis.cpp
+LOCAL_MODULE := libinit_pyxis
 
 include $(BUILD_STATIC_LIBRARY)
