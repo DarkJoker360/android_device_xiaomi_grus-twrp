@@ -1,7 +1,7 @@
-# android_device_xiaomi_pyxis
-For building TWRP for Xiaomi Mi 9 Lite
+# android_device_xiaomi_grus-twrp
+For building TWRP for Xiaomi Mi 9 SE
 
-TWRP device tree for Xiaomi Mi 9 Lite
+TWRP device tree for Xiaomi Mi 9 SE
 
 ## Features
 
@@ -32,21 +32,21 @@ repo sync
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/xiaomi/pyxis" name="mauronofrio/android_device_xiaomi_pyxis" remote="github" revision="android-9.0" />
+<project path="device/xiaomi/grus" name="DarkJoker360/android_device_xiaomi_grus-twrp" remote="github" revision="android-9.0" />
 ```
 
 Finally execute these:
 
 ```
 . build/envsetup.sh
-lunch omni_pyxis-eng
+lunch omni_grus-eng
 mka recoveryimage ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
 ```
 
 To test it:
 
 ```
-fastboot boot out/target/product/pyxis/recovery.img
+fastboot boot out/target/product/grus/recovery.img
 ```
 
 ## Other Sources

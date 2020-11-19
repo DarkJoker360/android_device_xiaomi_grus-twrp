@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := pyxis
+PRODUCT_RELEASE_NAME := grus
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,10 +23,10 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := pyxis
-PRODUCT_NAME := omni_pyxis
+PRODUCT_DEVICE := grus
+PRODUCT_NAME := omni_grus
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Mi 9 Lite
+PRODUCT_MODEL := Xiaomi Mi 9 SE
 PRODUCT_MANUFACTURER := Xiaomi
 
 # HACK: Set vendor patch level
